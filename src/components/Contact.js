@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
-import { PopupWidget } from "react-calendly";
+// import { PopupWidget } from "react-calendly";
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const { register, handleSubmit, errors } = useForm();
@@ -145,7 +145,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <PopupWidget url={process.env.REACT_APP_CALENDLY} />
+      {/* <PopupWidget url={process.env.REACT_APP_CALENDLY} /> */}
     </div>
   );
 };
